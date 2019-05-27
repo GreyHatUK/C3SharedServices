@@ -5,12 +5,20 @@ body {
     padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.navbar-inverse {
+    background-color:#41dfff;
+    color:black;
 }
+
+    .navbar-inverse .navbar-brand {
+        color: black;
+    }
+    /* Wrapping element */
+    /* Set some basic padding to keep content from hitting the edges */
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
 /* Carousel */
 .carousel-caption p {
@@ -34,4 +42,66 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+
+
+
+/*additions made to css normally scss or less would be used*/
+
+#HomeIndexContext{
+    text-align:center;
+    min-height:600px;
+}
+
+input[type=text] {
+    font-size: 22px;
+    height: 36px;
+    width: 200px;
+    border-color: #41dfff;
+    text-align:left;
+}
+
+    input[type=text].error {
+        border-color: #ff3333;
+    }
+
+.button {
+    font-size: 22px;
+    height: 36px;
+    width: 200px;
+    background-color: #41dfff;
+    margin:20px auto;
+    padding:4px 0 0 0;
+    -webkit-box-shadow: 3px 3px 5px -1px rgba(112,105,112,1);
+    -moz-box-shadow: 3px 3px 5px -1px rgba(112,105,112,1);
+    box-shadow: 3px 3px 5px -1px rgba(112,105,112,1);
+}
+
+    .button:active {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+    }
+
+.display-values{
+    font:28px;  
+    
+}
+    .display-values div {
+        padding: 2px 20px;
+        text-align: left;
+    }
+    .display-values .labels{
+        text-align:right;
+        font-weight:bold;
+    }
+
+    .display-values img{
+        max-height: 300px;
+        max-width:300px;
+        
+    }
+.error-message {
+    color: #ff3333;
+    font-size:32px;
 }
